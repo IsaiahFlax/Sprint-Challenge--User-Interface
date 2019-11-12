@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+  
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,19 +70,43 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
+nav {
+    display: flex;
+   justify-content: space-around;
+ 
+ 
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    align-content: center;
+    align-self: flex-end;
+}
+nav img {
+   
+}
+div.jumboimage img {
+    padding: 30px;
+    margin-bottom: -10px;
 
+}
 .top-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    box-sizing: border-box;
+    margin-left: 30px;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
+
+    padding: 20px;
     padding-bottom: 20px;  
 }
 
@@ -92,6 +117,7 @@ p {
 
 .middle-content h2 {
     padding: 0 2%;
+    margin-left: 20px;
     margin-bottom: 0;
 }
 
@@ -111,10 +137,50 @@ p {
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes .box1 {
+    background-color: teal;
+}
+.middle-content .boxes .box2 {
+    background-color: gold;
+}
+.middle-content .boxes .box3 {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box4 {
+    background-color: coral;
+}
+.middle-content .boxes .box5 {
+    background-color: crimson;
+}
+.middle-content .boxes .box6 {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box7 {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box8{
+    background-color: hotpink;
+}
+.middle-content .boxes .box9 {
+    background-color: indigo;
+}
+.middle-content .boxes .box10 {
+    background-color: dodgerblue;
+}
+/* box2: gold
+box3: cadetblue
+box4: coral
+box5: crimson
+box6: forestgreen
+box7: darkorchid
+box8: hotpink
+box9: indigo
+box10: dodgerblue */
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
+    margin-left: 20px;
     justify-content: space-around;
 }
 
@@ -143,4 +209,43 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+.aboutbox {
+    display:flex;
+    justify-content: center;
+    border-bottom: 1px dotted black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+div.about {
+    margin-left: 35px;
+    margin-right: 0px;
+    border-right:0px;;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.aboutpagemiddle{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.aboutpagemiddle .middlecontent {
+    width: 45%;
+    padding: 20px;
+    border-bottom: 1px dotted black;
+    margin: 10px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutpagemiddle .middlecontent h2 {
+    padding-top: 20px;
+}
+.learnmore {
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 10%;
+    margin-top: 10px;
+    padding: 5px;
 }
